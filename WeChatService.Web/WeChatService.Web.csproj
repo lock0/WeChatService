@@ -27,6 +27,7 @@
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -224,11 +225,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\AccessTokenController.cs" />
     <Compile Include="Controllers\API\BaseApiController.cs" />
     <Compile Include="Controllers\API\InitializeController.cs" />
     <Compile Include="Controllers\API\JsApiConfigController.cs" />
     <Compile Include="Controllers\API\ProvinceController.cs" />
     <Compile Include="Controllers\API\Sha1Controller.cs" />
+    <Compile Include="Controllers\API\WeChartUserInfoController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Enums\IsPublish.cs" />
@@ -247,6 +250,7 @@
     <Compile Include="Models\APIModel\AccessToken.cs" />
     <Compile Include="Models\APIModel\JsApiConfigModel.cs" />
     <Compile Include="Models\APIModel\Ticket.cs" />
+    <Compile Include="Models\APIModel\WeChatUserInfo.cs" />
     <Compile Include="Models\CityModel.cs" />
     <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
